@@ -32,3 +32,14 @@ I have successfully compiled SASS file to my CSS file, and then I have "turned" 
 sass --watch input.scss output.css
 
 What WATCH does for me is, that whatever I will change in style.scss, it will automatically compile style.css file.. so basically it is running the sass command autoamtically.. I LOVE THAT!!! and I hope that WATCH is actually working for another things as well
+
+
+Chapter 02 - Using Partials
+
+importing NORMALIZE.css - http://necolas.github.io/normalize.css/ 
+
+we are renaming the scss files with _ (underscore)
+
+modules (@import "module.scss") are called PARTIALS, usually they are organized in folder with SCSS files and only style.scss is without _ (underscore) the rest of so called partials are beginning with _ udnerscore 
+
+Chapter 02 - Creating basic MIXINS (JavaScript like functions)
