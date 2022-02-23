@@ -1,4 +1,27 @@
- html {
+@import "variables.scss";
+
+/*
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+
+$offWhite: #eee8d6;
+$darkBlue: #022933;
+$red: #d14348;
+$green: #00ff00;
+$blue: #0000ff;
+/*ADD SOME COLOURS IF YOU LIKE..*/
+
+/* Adding colour names, this is a common practice  */
+/*
+$color-main: $darkBlue;
+$color-background: $offWhite;
+$color-headlines: $red;
+*/
+
+$font-main: "Lato", Helvetica, sans-serif;
+
+html {
   font-size: 62.5%;
 }
 
@@ -6,12 +29,63 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  font-family: 'Helvetica', sans-serif;
-  color: #022933;
-  background-color: #EEE8D6;
+  /*font-family: "Helvetica", sans-serif;*/
+  font-family: $font-main; // new font
+  color: $darkBlue;
+  background-color: $offWhite;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-main;
+  color: $color-headlines;
+}
+
+// This was added in chapter 2 - Nesting your styles
+// do not nest too deep 2 - 3 levels
+$color-item-border: $green;
+$color-media-head: $blue;
+
+.media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .item {
+    margin-bottom: 20px;
+    // dotted green line
+    border-top: 1px dotted $color-item-border;
+    padding-top: 10px;
+  }
+
+  .head {
+    margin: 0;
+    padding: 0;
+    color: $color-media-head;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-main;
+  }
 }

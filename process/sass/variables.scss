@@ -1,0 +1,14 @@
+// We can create a separate file for variables, and then we can import it in main style.scss!
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+$offWhite: #eee8d6;
+$darkBlue: #022933;
+$red: #d14348;
+$green: #00ff00;
+$blue: #0000ff;
+
+/* Adding colour names, this is a common practice  */
+$color-main: $darkBlue;
+$color-background: $offWhite;
+$color-headlines: $red;
