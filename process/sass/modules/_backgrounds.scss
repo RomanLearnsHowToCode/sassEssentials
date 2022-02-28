@@ -28,6 +28,10 @@
 .jumbotron {
   //background: $darkBlue;
   //calling mixin
-  @include backImage("../images/water.jpg");
-  height: 600px;
+  @include backImage("../images/water.jpg", 600px);
+  //height: 600px; - we can modify the default value from mixin, which is now 100vh (100 view port height)
+}
+
+.bridge {
+    @include backImage("../images/bridge.jpg", 600px, center center);
 }
