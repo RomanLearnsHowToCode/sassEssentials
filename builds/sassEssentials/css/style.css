@@ -414,6 +414,36 @@ h6 {
   color: #022933;
 }
 
+/*
+We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the output in style.css will be only those three options, not the main .btn class
+
+*/
+.btn, .btn-cool, .btn-hot, .btn-default {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato", Helvetica, sans-serif;
+  user-select: none;
+  color: #eee8d6;
+}
+
+.btn-default {
+  background: #022933;
+}
+
+.btn-hot {
+  background: #d14348;
+}
+
+.btn-cool {
+  background: #0000ff;
+}
+
 .media {
   margin: 0;
   padding: 0;
