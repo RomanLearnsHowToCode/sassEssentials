@@ -450,15 +450,36 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
   list-style: none;
 }
 .media .item {
-  margin-bottom: 20px;
-  border-top: 1px dotted #d14348;
+  padding-bottom: 10px;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px dotted #d14348;
+}
+#typography .media .item:hover {
+  background: blue;
+}
+.media .item:hover {
+  background: #d14348;
+}
+.media .item:last-of-type {
+  border-bottom: 1px dotted #d14348;
+}
+.media .item:before, .media .item:after {
+  content: "";
+  display: table;
+}
+.media .item:after {
+  clear: both;
 }
 .media .head {
   margin: 0;
   padding: 0;
   color: #0000ff;
   font-size: 2rem;
+}
+#typography .media .head {
+  color: #d14348;
 }
 .media p {
   margin: 0;
