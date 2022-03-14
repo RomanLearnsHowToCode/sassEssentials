@@ -1,3 +1,4 @@
+/* Load Fonts - this comment will show up in processed version */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 /* Adding colour names, this is a common practice  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -444,6 +445,31 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
   background: #0000ff;
 }
 
+.grid:before, .grid:after {
+  content: "";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+.grid .item {
+  float: left;
+  width: 19.2%;
+}
+.grid .item:nth-child(n) {
+  margin-bottom: 1%;
+  margin-right: 1%;
+}
+.grid .item:nth-child(5n) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.grid img {
+  display: block;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
 .media {
   margin: 0;
   padding: 0;
@@ -532,6 +558,30 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
   background-position: center center;
   background-size: cover;
   height: 600px;
+}
+
+.table {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+.table caption {
+  font-size: 2.5rem;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  padding: 10px;
+  border-bottom: 1px dotted #0000ff;
+}
+.table > thead > tr {
+  background-color: #022933;
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,17 +24,32 @@ $color-btn-cool: $blue;
   color: $color-btn-text;
 }
 
-.btn-default{
-    @extend .btn;
-    background: $color-btn-default;
+.btn-default {
+  @extend .btn;
+  background: $color-btn-default;
 }
 
-.btn-hot{
-    @extend .btn;
-    background: $color-btn-hot;
+.btn-hot {
+  @extend .btn;
+  background: $color-btn-hot;
 }
 
-.btn-cool{
-    @extend .btn;
-    background: $color-btn-cool;
+.btn-cool {
+  @extend .btn;
+  background: $color-btn-cool;
+}
+
+// Chapter 03 - working with math operations
+.grid {
+  // first we need to clear floats etc
+  @include clearfix;
+  .item {
+    float: left;
+    @include imagegrid(5, 1%);
+  }
+  img {
+      display: block;
+      border-radius: 10px;
+      max-width: 100%;
+  }
 }

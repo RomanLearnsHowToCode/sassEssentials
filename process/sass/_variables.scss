@@ -1,5 +1,7 @@
 // We can create a separate file for variables, and then we can import it in main style.scss!
 
+/* Load Fonts - this comment will show up in processed version */
+// This comment won't show up in processed version 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 $offWhite: #eee8d6;
@@ -8,6 +10,7 @@ $red: #d14348;
 $green: #00ff00;
 $blue: #0000ff;
 $yellow: yellow;
+
 
 /* Adding colour names, this is a common practice  */
 $color-main: $darkBlue;

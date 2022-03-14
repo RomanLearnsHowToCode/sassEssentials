@@ -28,6 +28,7 @@ Check out some of my [other courses on lynda.com](http://lynda.com/rayvillalobos
 ROMAN'S COMMENTS:
 -- I had to change some things and install SASS following npm install -g sass command,
 then using this command: sass source/stylesheets/index.scss build/stylesheets/index.css
+sass process/sass/style.scss builds/sassEssentials/css/style.css  <- use this one
 I have successfully compiled SASS file to my CSS file, and then I have "turned" on WATCH by this command:
 sass --watch input.scss output.css
 
@@ -43,3 +44,6 @@ we are renaming the scss files with _ (underscore)
 modules (@import "module.scss") are called PARTIALS, usually they are organized in folder with SCSS files and only style.scss is without _ (underscore) the rest of so called partials are beginning with _ udnerscore 
 
 Chapter 02 - Creating basic MIXINS (JavaScript like functions)
+
+Chapter 03 - Working with Math operations:
+   
