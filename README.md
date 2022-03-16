@@ -46,4 +46,5 @@ modules (@import "module.scss") are called PARTIALS, usually they are organized 
 Chapter 02 - Creating basic MIXINS (JavaScript like functions)
 
 Chapter 03 - Working with Math operations:
-   
+
+- https://sass-lang.com/documentation/modules saas documentation

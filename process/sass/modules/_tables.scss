@@ -13,6 +13,11 @@
   > tbody,
   > tfoot {
     > tr {
+      &:nth-child(even){ // every even child of the table will have aqua background
+        background-color: aqua;
+      }
+
+
       > th,
       > td {
         padding: 10px;
@@ -24,5 +29,12 @@
   > thead > tr {
     background-color: $darkBlue;
     color: aliceblue;
+    &:hover {
+      background-color: complement($color: $offWhite);
+    }
+    > th {
+      border-bottom: 0;
+    }
+
   }
 }

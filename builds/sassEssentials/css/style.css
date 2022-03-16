@@ -570,6 +570,11 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
   text-align: left;
   padding-bottom: 5px;
 }
+.table > thead > tr:nth-child(even),
+.table > tbody > tr:nth-child(even),
+.table > tfoot > tr:nth-child(even) {
+  background-color: aqua;
+}
 .table > thead > tr > th,
 .table > thead > tr > td,
 .table > tbody > tr > th,
@@ -582,6 +587,12 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
 .table > thead > tr {
   background-color: #022933;
   color: aliceblue;
+}
+.table > thead > tr:hover {
+  background-color: #d6dcee;
+}
+.table > thead > tr > th {
+  border-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
