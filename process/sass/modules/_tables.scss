@@ -1,3 +1,6 @@
+// this SCSS file is modifying table section of index file
+$color-even-cells: transparentize($color: aqua, $amount: .8);
+
 .table {
   font-size: 1.5rem;
   text-align: left;
@@ -13,8 +16,19 @@
   > tbody,
   > tfoot {
     > tr {
+
+      &:hover {
+        background-color: darken(adjust-hue($color-backgrounds, -20deg), 10%);
+      }
+
       &:nth-child(even){ // every even child of the table will have aqua background
-        background-color: aqua;
+        //background-color: aqua;
+        background-color: $color-even-cells;
+
+        &:hover{
+          background-color: opacify($color-even-cells, .3);
+        }
+
       }
 
 

@@ -466,7 +466,7 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
 }
 .grid img {
   display: block;
-  border-radius: 10px;
+  border-radius: 20px 0 20px 0;
   max-width: 100%;
 }
 
@@ -570,10 +570,20 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
   text-align: left;
   padding-bottom: 5px;
 }
+.table > thead > tr:hover,
+.table > tbody > tr:hover,
+.table > tfoot > tr:hover {
+  background-color: #dfc5b2;
+}
 .table > thead > tr:nth-child(even),
 .table > tbody > tr:nth-child(even),
 .table > tfoot > tr:nth-child(even) {
-  background-color: aqua;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+.table > thead > tr:nth-child(even):hover,
+.table > tbody > tr:nth-child(even):hover,
+.table > tfoot > tr:nth-child(even):hover {
+  background-color: rgba(0, 255, 255, 0.5);
 }
 .table > thead > tr > th,
 .table > thead > tr > td,
