@@ -383,7 +383,31 @@ h4,
 h5,
 h6 {
   font-family: "Lato", Helvetica, sans-serif;
+  color: #0000ff, purple, #00ff00, #d14348, orange, yellow;
+}
+
+h1 {
+  color: #0000ff;
+}
+
+h2 {
+  color: purple;
+}
+
+h3 {
+  color: #00ff00;
+}
+
+h4 {
   color: #d14348;
+}
+
+h5 {
+  color: orange;
+}
+
+h6 {
+  color: yellow;
 }
 
 .media {
@@ -431,6 +455,18 @@ We can use %btn {class info} then %btn-default, %btn-hot, %btn-cool, so the outp
   font-family: "Lato", Helvetica, sans-serif;
   user-select: none;
   color: #eee8d6;
+}
+
+.btn-default {
+  background-color: value;
+}
+
+.btn-hot {
+  background-color: value;
+}
+
+.btn-cool {
+  background-color: value;
 }
 
 .btn-default {

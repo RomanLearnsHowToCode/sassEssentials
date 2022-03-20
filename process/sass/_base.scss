@@ -36,6 +36,8 @@ body {
   margin: 0 auto;
 }
 
+$color-headlines: $blue, $purple, $green, $red, $orange, $yellow;
+
 h1,
 h2,
 h3,
@@ -44,6 +46,12 @@ h5,
 h6 {
   font-family: $font-main;
   color: $color-headlines;
+}
+
+@for $item from 1 through length($color-headlines) {
+  h#{$item}{
+    color: nth($color-headlines, $item );
+  }
 }
 
 // This was added in chapter 2 - Nesting your styles

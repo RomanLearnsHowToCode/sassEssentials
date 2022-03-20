@@ -25,6 +25,23 @@ $roundeness: 20px 0 20px 0; // this is a list, and it will create a effect for l
   color: $color-btn-text;
 }
 
+$color-btn-names: 'default','hot','cool';
+$color-btn-values: $color-btn-default, $red, $blue;
+
+$color-btn: (
+  default: $color-main, 
+  hot: $red,
+  cool: $blue
+);
+
+@each $key, $value in $color-btn{
+
+  .btn-#{$key} {
+    @extend %btn !optional;
+    background-color: value;
+  }
+}
+
 .btn-default {
   @extend .btn;
   background: $color-btn-default;
