@@ -639,12 +639,20 @@ ul:after {
   clear: both;
 }
 
-ul li {
-  padding: 10px 5px;
-}
 @media (min-width: 760px) {
   ul li {
     float: right;
+    padding: 10px 5px;
+  }
+}
+footer ul li {
+  margin-top: 20px;
+  min-height: 200px;
+  background-color: #0000b3;
+}
+@media (min-width: 0) and (max-width: 750px) {
+  footer ul li {
+    display: none;
   }
 }
 
@@ -656,8 +664,11 @@ ul li a {
 ul li a:hover {
   color: yellowgreen;
 }
-header ul li ahover {
+header ul li a:hover {
   background-color: #000099;
+}
+footer ul li a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

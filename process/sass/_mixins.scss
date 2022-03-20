@@ -35,8 +35,15 @@
   }
 }
 
-@mixin break($lenght) {
-  @media (min-width: $lenght){
-    @content;
-  }
+// chapter 03 - conditional @if statements and argument list arg list is a parameter which will take any number of parameters
+@mixin break($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)){
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)){
+      @content;
+    }
+  }  
 }

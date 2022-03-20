@@ -1,48 +1,65 @@
-nav  {
-    header & { // if it is in header
-        background-color: darken($offWhite, $amount: 15%);
-    }
+nav {
+  header & {
+    // if it is in header
+    background-color: darken($offWhite, $amount: 15%);
+  }
 }
 
 .branding {
-    float: left;
-    display: none;
-    @include break(1000px) {
-        display: block;
-    }
+  float: left;
+  display: none;
+  @include break(1000px) {
+    display: block;
+  }
 }
 
 .branding h1 {
-    font-size: 2.75rem;
-    overflow: hidden;
-    margin: 0;
-    color: burlywood;
+  font-size: 2.75rem;
+  overflow: hidden;
+  margin: 0;
+  color: burlywood;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    @include clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include clearfix;
 }
 
 ul li {
-    @include break(760px){
-        float: right;
-    }
+  @include break(760px) {
+    float: right;
     padding: 10px 5px;
+  }
+
+  footer & {
+      margin-top: 20px;
+      min-height: 200px;
+      background-color: darken($color: blue, $amount: 15%);
+      
+      @include break(0, 750px) {
+          display: none;
+        }
+    }
 }
 
 ul li a {
-    text-decoration: none;
-    padding: 10px 5px;
-    color: $color-backgrounds;
+  text-decoration: none;
+  padding: 10px 5px;
+  color: $color-backgrounds;
 
-    &:hover {
-        color: yellowgreen;
-    }
+  &:hover {
+    color: yellowgreen;
+  }
 
-    header &hover {
-        background-color: darken($blue, 20%);
-    }
+  header &:hover {
+    background-color: darken($blue, 20%);
+  }
+
+  footer & {
+    color: white;
+  }
 }
+
+
